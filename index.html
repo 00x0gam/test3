@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{margin: 0; padding: 0; font-family: "맑은 고딕";}
+        ul,ol,li {list-style: none; margin: 0; padding: 0;}
+
+        .min{width: 1500px; height: 25px; margin: 0 auto; background-color: rgb(0, 0, 0);
+            color: white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;}
+
+        .min::before{content: "NEW"; font-size: 12px; font-weight: bold;
+                    background-color: white; border-radius: 30px;
+                    color: black; margin: 0 0 0 6px; padding: 1px 2px;}
+
+        .menu {width: 1500px; height: 80px; margin: 0 auto;}
+        .logo {float: left; width: 130px; height: 70px; 
+                margin: 10px 0 0 10px; background-color:rgb(63, 255, 137)d; }
+        .logo > img {width: 100px; height: 55px;} 
+
+        nav{float:left; width: 800px; height: 60px; margin: 30px 0 0 30px; }
+        nav ul{font-family: "Arial"; font-weight: bold;}
+        nav ul li{float: left; padding: 0 20px;}
+        nav ul li a{text-decoration: none; color: #000;}
+        nav ul li a:hover{color: blue;}
+
+        #sweet{width: 1500px; height: 800px; margin: 0 auto;}
+        #sweet img{width: 100%; height: 100%; object-fit: fill;}
+
+
+        .mem{width: 1500px; height: 450px; margin: 0 auto; background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;}
+
+        .star{width: 270px; height: 380px; float: left; margin: 30px 12px;
+              background-color: #fff;}
+        .star img{width: 100%; height: 100%; object-fit: fill;}
+
+
+        .n{width: 1500px; height:650px; margin: 0 auto; background-color: rgb(0, 0, 0);
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;}
+
+        .n img {width: 600px; height: 600px; padding: 25px;}
+        .n .text-container {
+                        display: flex;
+                        flex-direction: column; /* 세로로 배치 */
+                        align-items: center;
+                        margin-left: 20px;}
+        .n h2 {font-size: 72px;
+            color: white;
+            font-family: "맑은 고딕";
+            margin: 10px 0 20px 0;}
+
+        .n p{color: white;
+            font-family: "맑은 고딕";
+            text-align: center;
+            font-size: 18px;
+            max-width: 800px; /* 텍스트의 가로 너비를 제한 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            line-height: 1.6; /* 줄 간격 조정 */
+            }
+
+        .album{width: 1500px; height: 250px; margin: 0 auto; background-color: rgb(255, 255, 255);
+                overflow: hidden;
+                position: relative;
+                background-image: url('./NJZ/bbb.jpg');
+                background-size: cover;
+                background-position: center;}
+        
+        .album-container{display:flex; width: max-content; animation: moveLeft 20s linear infinite;}
+        .album-container img {width:100%; height: 100%; object-fit: fill;}
+
+        .mu{ width: 200px; height: 200px; margin: 30px 12px;
+              background-color: rgb(154, 206, 255);
+              display: inline-block;}
+
+        @keyframes moveLeft { 0% { transform: translateX(0%); /* 애니메이션 시작 위치 */}
+                            100% {transform: translateX(-50%); /* 애니메이션 종료 위치 */} }
+
+        footer{width: 1500px; height: 100px; margin: 0 auto; background-color: rgb(255, 255, 255)}
+        footer p{font-family: "돋움"; font-size: 12px; color: #666;
+                margin: 20px 30px 0 0; float: right;}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--헤더 미니-->
+    <header class="min">NJZ로 새롭게</header> 
+    <!--헤더 로고, 메뉴창-->
+    <header class="menu">
+        <div class="logo"><img src="./NJZ/logo.png"></div>
+        <nav>
+            <ul>
+                <li><a href="#">MEMBER</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">NEW ALBUM</a></li>
+                <li><a href="#">OBOUT US</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--배경으로 이미지 넣기-->
+    <div id="sweet"><img src="./NJZ/5인조.jpg"></div>
+
+    <!--멤버소개-->
+    <section class="mem">
+        <article class="star"><img src="./NJZ/m.png"></article>
+        <article class="star"><img src="./NJZ/hn.png"></article>
+        <article class="star"><img src="./NJZ/h.png"></article>
+        <article class="star"><img src="./NJZ/dn.png"></article>
+        <article class="star"><img src="./NJZ/hh.png"></article>
+    </section>
+
+    <!--공백-->
+    <div class="n">
+        <img src="./NJZ/aaaa.png">
+        <div class="text-container">
+            <h2>NJZ</h2>
+            <p>
+                대중음악은 일상과 초근접해 있는 문화이기<br>때문에 마치 매일 입는 옷과 같다.<br>
+                <br>
+                특히 진스(Jeans)는 시대를 불문해 남녀노소 모두에게 사랑받아 온 아이템이다.<br>
+                뉴진스(NewJeans)에는 매일 찾게 되고 언제 입어도 질리지 않는 진스처럼<br>
+                시대의 아이콘이 되겠다는 포부와 New Genes<br>
+                <br>
+                즉 새로운 시대를 열겠다는 각오도 동시에 담겨 있다.</p>
+        </div>
+    </div>
+
+    <!--앨범소개(루프 애니넣어보기기)-->
+    <section class="album">
+        <div class="album-container">
+            <article class="mu"><img src="./NJZ/a.png"></article>
+            <article class="mu"><img src="./NJZ/b.png"></article>
+            <article class="mu"><img src="./NJZ/c.png"></article>
+            <article class="mu"><img src="./NJZ/db.png"></article>
+            <article class="mu"><img src="./NJZ/e.png"></article>
+            <article class="mu"><img src="./NJZ/g.png"></article>
+            <article class="mu"><img src="./NJZ/zero.png"></article>
+            <article class="mu"><img src="./NJZ/f.png"></article>
+
+            <article class="mu"><img src="./NJZ/a.png"></article>
+            <article class="mu"><img src="./NJZ/b.png"></article>
+            <article class="mu"><img src="./NJZ/c.png"></article>
+            <article class="mu"><img src="./NJZ/db.png"></article>
+            <article class="mu"><img src="./NJZ/e.png"></article>
+            <article class="mu"><img src="./NJZ/g.png"></article>
+            <article class="mu"><img src="./NJZ/zero.png"></article>
+            <article class="mu"><img src="./NJZ/f.png"></article>
+        </div>
+    </section>
+
+    <footer>        
+        <p>New Jeans is a popular South Korean girl group known for their catchy music,
+        fresh style, and impressive performances, quickly gaining global recognition.</p>
+    </footer>
+
+</body>
+</html>
